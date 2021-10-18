@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     zlib1g-dev \ 
     libcurl4-gnutls-dev libssl-dev \ 
     cmake unzip git wget libz-dev vim autoconf curl 
-RUN pip3 install biopython pandas lxml six ete3 medaka==1.4.3 numpy==1.18.5
+RUN pip3 install biopython pandas lxml six ete3 krocus medaka==1.4.3 numpy==1.18.5
 #Download nanoMLST2 
 WORKDIR /opt 
 RUN git clone https://github.com/jade-nhri/nanoMLST2.git 
