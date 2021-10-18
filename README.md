@@ -24,3 +24,8 @@ cd nanoMLST2
 chmod +x *.py
 
 export PATH="$PATH:/opt/nanoMLST2"
+
+**Quick start**
+
+nanoMLST2.py indir outdir threads
+
