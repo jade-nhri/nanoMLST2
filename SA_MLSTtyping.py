@@ -3,7 +3,6 @@ import sys,os
 import subprocess
 import pandas as pd
 from Bio.Seq import Seq
-from Bio.Alphabet import generic_dna
 
 infile=sys.argv[1]
 infile=os.path.abspath(infile)
