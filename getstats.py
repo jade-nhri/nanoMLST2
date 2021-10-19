@@ -2,9 +2,17 @@
 import os,sys
 import pandas as pd
 import numpy as np
+import argparse
+
 
 infile='stats.txt'
+parser = argparse.ArgumentParser()
+parser.add_argument('-i', help='the path to stats.txt' )
+args = parser.parse_args()
 
+argv=sys.argv
+if '-i' in argv:
+    infile=os.path.abspath(argv[argv.index('-i')+1])
 
 df=pd.read_table(infile,skiprows=[0], names=['file','format',  'type','num_seqs', 'sum_len',  'min_len',  'avg_len' ,'max_len'],sep='\s+')
 print (df)

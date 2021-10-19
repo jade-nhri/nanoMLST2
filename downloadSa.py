@@ -1,5 +1,22 @@
 #!/usr/bin/env python3
-import os,subprocess
+import sys,os,subprocess
+import argparse
+
+threads=8
+outpath='output'
+parser = argparse.ArgumentParser()
+parser.add_argument('-o', help='an output folder (dfault output)')
+args = parser.parse_args()
+
+argv=sys.argv
+if '-o' in argv:
+    outpath=argv[argv.index('-o')+1]
+
+outpath=os.path.abspath(outpath)
+
+if not os.path.exists(outpath):
+    os.mkdir(outpath)
+os.chdir(outpath)
 
 if not os.path.exists('Staphylococcus_aureus'):
     os.mkdir('Staphylococcus_aureus')
