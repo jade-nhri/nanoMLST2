@@ -27,5 +27,5 @@ export PATH="$PATH:/opt/nanoMLST2"
 
 **Quick start**
 
-nanoMLST2.py indir outdir threads
+nanoMLST2.py -i FASTQ -o OUTPUT
 
