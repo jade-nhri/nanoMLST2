@@ -3,6 +3,7 @@ import sys,os
 import subprocess
 import pandas as pd
 from Bio.Seq import Seq
+#from Bio.Alphabet import generic_dna
 
 infile=sys.argv[1]
 infile=os.path.abspath(infile)
@@ -259,11 +260,11 @@ if type1!=None and type2!=None and type3!=None and type4!=None and type5!=None a
         mlst[comb]=df.iloc[i,0]
 
     if out not in mlst.keys():
-        print ('New MLST type!')
+        print ('New ST')
     else:
         print (mlst[out])
 
 else:
-    print ("MLST fail")
+    print ("New allele")
 
 
