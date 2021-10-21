@@ -30,3 +30,7 @@ export PATH="$PATH:/opt/nanoMLST2"
 nanoMLST2.py -i FASTQ -o OUTPUT
 
 - [readme](https://www.dropbox.com/s/hwmqvq2um7xwsns/nanoMLST2.pdf?dl=0)
+
+All reads are available at https://drive.google.com/drive/folders/1Dtsetwj9R1adxp7jg2LJFVoJyvkO4PFm?usp=sharing
+
+
